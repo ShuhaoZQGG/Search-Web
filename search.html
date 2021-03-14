@@ -10,12 +10,22 @@
             color:black;
             
         }
-
+  
         form
         {
 
             padding-top: 10px;
             border-style: round;      
+        }
+        div.image_search {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+        }
+        div.advanced_search{
+            position: absolute;
+            right: 30px;
+            top: 40px;
         }
 
         img
@@ -33,6 +43,7 @@
         <title>Search</title>
     </head>
 <body>
+
     <img src="google.jpg" width="800" height="400" alt="google" margin-top="900px">
     <form action="https://google.com/search" size="300px">
             <input type="text" name="q" size="100px" style="color:black; 
@@ -40,8 +51,16 @@
        <div>
             <input type="submit" value="Google Search" size="200px" style="color: black">
 
-        
-            <input formaction="https://www.google.com/doodles" type="submit" value="I am feeling lucky" size="200px" style="color: black">      
+            
+            <input formaction="https://www.google.com/doodles" type="submit" value="I am feeling lucky" size="200px" style="color: black">
+
+            <div class ='image_search'>
+            <input formaction="https://www.google.com/imghp?hl=en" type="submit"  value="Image Search" size="200px" style="color: black"> 
+            </div>     
+
+            <div class ='advanced_search'>
+            <input formaction="https://www.google.ca/advanced_search" type="submit"  value="Advanced Search" size="200px" style="color: black"> 
+            </div>    
         </div>
     </form>
 
