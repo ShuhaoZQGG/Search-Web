@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <style>
+        body{
+            text-align:center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+            font-weight: bold;
+            color:black;
+         
+        }
+        
+        div.image_search{
+            size: "100px";
+            color: black;
+            }
+        div.google_search {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+        }
+    </style>
+    
+    <body>
+        <img src="google.jpg" width="800" height="400" alt="google" margin-top="900px">
+        <form action="http://www.images.google.com/images " size = "300px">
+        <input type="text" name="q" size="100px" style="color:black; 
+            border: 2px solid silver; border-radius: 10px;">
+            <div class="image_search">
+                <input type = "submit" value = "Image Search">
+                <input formaction="https://www.google.com/doodles" type="submit" value="I am feeling lucky" size="200px" style="color: black">
+            </div>
+
+           <div class = "google_search">
+            <input formaction="file:///C:/Users/shuha/Desktop/Web%20Development/Search-Web/search.html" type="submit"  value="Google Search" size="200px" style="color: black"> 
+           </div>
+        </form>
+    </body>
+</html>
