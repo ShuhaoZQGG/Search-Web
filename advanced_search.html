@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <style>
+        div.head{
+       color:red;
+       font-size:30px;
+   }
+   div.img{
+       border-image: fill;
+       background-color: lightgrey;
+       border-width: 1000px;
+       border-radius: 10px;   
+   }
+        body{
+            text-align:left;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color:auto;         
+        }
+        
+       
+        div.google_search {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+        }
+        div.image_search {
+            position: absolute;
+            right: 30px;
+            top: 40px;
+        }
+
+        div.label_1{
+            padding: 10px;
+            size: 10px;
+            font-size: 18px;
+        }
+        input:focus{
+            background-color:lightblue;
+        }
+    </style>
+    
+    <body>
+        <div class="img">
+        <img src="google.jpg" width="160" height="80" alt="google" margin-top="30px" >
+        </div>
+        <div class="head">
+        <head >Advanced Search</head>
+        </div>
+        <form action="https://www.google.com/search ">
+          
+         <div class = "label_1"> 
+        <div>
+            <label for = "as_q">all these words: </label>
+        <input type="text" name="as_q" size="30px" style="color:black; 
+            border: 2px solid silver; border-radius: 10px; margin-left: 110px;">
+        </div>
+
+        <div>
+        <label for = "as_epq">this exact word or phrase: </label>
+        <input type="text" name="as_epq" size="30px" style="color:black; 
+        border: 2px solid silver; border-radius: 10px; margin-left: 30px;"> 
+        </div>
+
+        <div>
+            <label for = "as_oq">any of these words: </label>
+            <input type="text" name="as_oq" size="30px" style="color:black; 
+            border: 2px solid silver; border-radius: 10px; margin-left: 82px;"> 
+        </div>
+
+        <div>
+            <label for = "as_eq">none of these words: </label>
+            <input type="text" name="as_eq" size="30px" style="color:black; 
+            border: 2px solid silver; border-radius: 10px; margin-left: 73px;"> 
+        </div>
+
+    </div>
+
+        <input type="submit" value="Advanced Search" size="200px" style="color:white; background-color:rgb(89, 89, 231); font-size:15px; margin-left:340px;">
+           <div class = "google_search">
+            <input formaction="file:///C:/Users/shuha/Desktop/Web%20Development/Search-Web/search.html" type="submit"  value="Google Search" size="200px" style="color: black"> 
+           </div>
+
+           <div class ='image_search'>
+            <input formaction="file:///C:/Users/shuha/Desktop/Web%20Development/Search-Web/image_search.html" type="submit"  value="Image Search" size="200px" style="color: black"> 
+            </div> 
+        </form>
+    </body>
+</html>
